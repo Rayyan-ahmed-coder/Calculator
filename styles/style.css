@@ -31,6 +31,25 @@ html {
 	color: #80e1f0;
 }
 
+::-webkit-scrollbar {
+	width: 8px;
+	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+    background:
+		linear-gradient(135deg,
+		rgb(46, 44, 44),
+		rgb(43, 40, 40));
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #265481;
+	border-radius: 10px;
+	transition: 0.1s;
+}
+
 body{
 	min-height: 100vh;
 	display: flex;
