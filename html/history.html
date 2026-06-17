@@ -4,13 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator History</title>
+    <link rel="stylesheet" href="../styles/history.css">
+    <link rel="icon" href="../images/calicon.png" type="image/png">
 </head>
 <body>
-    <header>
-      <h1>History</h1>
-    </header>
-    <ul>
-      <li ></li>
-    </ul>
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <main class="history-container">
+      
+        <header class="history-header">
+            <h1>📜 Calculator History</h1>
+            <p>Your recent calculations are stored here.</p>
+        </header>
+
+        <section class="history-section">
+            <div class="history-toolbar">
+                <h3>Total Calculations: <span id="eval-counter">0</span></h3>
+            </div>
+
+            <ul class="history-list" id="history-list">
+                <li class="history-item">
+                    No Calculations yet
+                </li>
+            </ul>
+
+            <div class="buttons-container">
+                <a href="../index.html">
+                    <button class="back-btn" id="back-btn">Back</button>
+                </a>
+                <button class="clear-btn" id="clear-btn">
+                    Clear
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="../java/history.js"></script>
 </body>
 </html>

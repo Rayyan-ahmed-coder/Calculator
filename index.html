@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
     <link rel="stylesheet" href="styles/style.css" >
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/calicon.png" type="image/png">
 	<title>Calcultor</title>
   </head>
   <body>
@@ -14,30 +15,32 @@
 			<div class="result">0</div>
 			<hr class="line-divider">
 		</section>
-		  <div>
-			<button onclick="append(1)" class="number">1</button>
-			<button onclick="append(2)" class="number">2</button>
-			<button onclick="append(3)" class="number">3</button>
-			<button onclick="operate('+')" class="operator">+</button>
-			<button onclick="goToHistory()" class="history">H</button>
+		  <div class="buttons-grid">
+			<button onclick="append(1)" class="number" id="1">1</button>
+			<button onclick="append(2)" class="number" id="2">2</button>
+			<button onclick="append(3)" class="number" id="3">3</button>
+			<button onclick="operate('+')" class="operator" id="+">+</button>
+			<a href="html/history.html" id="link-history">
+				<button class="history" id="H" title="History bUtton">H</button>
+			</a>
 			<br>
-			<button onclick="append(4)" class="number">4</button>
-			<button onclick="append(5)" class="number">5</button>
-			<button onclick="append(6)" class="number">6</button>
-			<button onclick="operate('-')" class="operator">-</button>
-			<button onclick="back()" class="back">«</button>
+			<button onclick="append(4)" class="number" id="4">4</button>
+			<button onclick="append(5)" class="number" id="5">5</button>
+			<button onclick="append(6)" class="number" id="6">6</button>
+			<button onclick="operate('-')" class="operator" id="-">-</button>
+			<button onclick="back()" class="back" id="b">«</button>
 			<br>
-			<button onclick="append(7)" class="number">7</button>
-			<button onclick="append(8)" class="number">8</button>
-			<button onclick="append(9)" class="number">9</button>
-			<button onclick="operate('×')" class="operator">×</button>
-			<button onclick="clearResult()" class="clear">C</button>
+			<button onclick="append(7)" class="number" id="7">7</button>
+			<button onclick="append(8)" class="number" id="8">8</button>
+			<button onclick="append(9)" class="number" id="9">9</button>
+			<button onclick="operate('×')" class="operator" id="*">×</button>
+			<button onclick="clearResult()" class="clear" id="C">C</button>
 			<br>
-			<button onclick="point()" class="point">.</button>
-			<button onclick="append(0)" class="number">0</button>
-			<button onclick="operate('÷')" class="operator">÷</button>
-			<button onclick="percentage('%')" class="operator">%</button>
-			<button onclick="calculate()" class="evaluate">=</button>
+			<button onclick="point()" class="point" id=".">.</button>
+			<button onclick="append(0)" class="number" id="0">0</button>
+			<button onclick="operate('÷')" class="operator" id="/">÷</button>
+			<button onclick="percentage('%')" class="operator" id="%">%</button>
+			<button onclick="calculate()" class="evaluate" id="=">=</button>
 		  </div>
 	    </div>
 	  </main>
