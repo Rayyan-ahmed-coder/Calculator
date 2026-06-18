@@ -7,6 +7,7 @@ const moveRight = () => {
     result.scrollLeft = result.scrollWidth;
 }
 
+
 function append(number) {
     evalValues = ["0", "Error", "Undefined", "Overflow"];
 
